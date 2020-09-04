@@ -2,19 +2,19 @@
 apiVersion: v1
 kind: ImageStream
 metadata:
-  name: s2i-angular-httpd24
+  name: s2i-angular-2-5-httpd24
   creationTimestamp: null
   annotations:
-    openshift.io/display-name: Angular
+    openshift.io/display-name: Angular-2-5
 spec:
   tags:
     - name: latest
       annotations:
-        openshift.io/display-name: Angular
+        openshift.io/display-name: Angular-2-5
         description: >-
           Build and run Angular 2-5 apps based on the official
           centos/httpd-24-centos7 image. For more information about using this
-          builder image, see https://github.com/mprahl/s2i-angular-httpd24.
+          builder image, see https://github.com/apex011/s2i-angular-2-5-httpd24.
         iconClass: icon-js
         tags: 'builder,angular,javascript' 
         supports: 'angular' 
