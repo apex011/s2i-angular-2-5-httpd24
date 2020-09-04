@@ -1,8 +1,8 @@
 
 # S2I Builder for Angular Apps
 
-This repository contains the source for building Angular applications based on
-the official httpd24 CentOS and Red Hat images using source-to-image (S2I).
+This repository contains the source for building Angular 2-5 applications based on
+https://github.com/vilaspatel/s2i-angular-httpd24
 
 For more information about using these images with OpenShift, please see the
 official OpenShift documentation.
@@ -11,8 +11,8 @@ official OpenShift documentation.
 
 The following configuration environment variables are specific to this image:
 
-* **NG_CONFIG** - the Angular configuration to pass to `ng build`. This
-    defaults to `production`.
+* **NG_ENVIRONMENT** - the Angular environment to pass to `ng build`. This
+    defaults to `prod`.
 * **NODE_ENV** - this defaults to `production`.
 * **NPM_CONFIG_LOGLEVEL** - this defaults to `info`.
 * **NPM_MIRROR** - an NPM registry mirror to use instead of the official NPM

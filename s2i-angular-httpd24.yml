@@ -20,4 +20,4 @@ spec:
         supports: 'angular' 
       from:
         kind: DockerImage
-        name: 'mprahl/s2i-angular-httpd24:latest'
+        name: 'apex01/s2i-angular-2-5-httpd24:latest'
