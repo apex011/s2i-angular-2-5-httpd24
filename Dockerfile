@@ -47,6 +47,7 @@ RUN for file in /usr/libexec/s2i/*; do cp -- "$file" "$file-httpd"; done
 RUN sed -i '/^.*rm -rf ${dir}\/httpd-ssl.*/d' /usr/share/container-scripts/httpd/common.sh
 # Copy the S2I scripts
 COPY ./s2i/bin/ /usr/libexec/s2i
+RUN chmod -R +x /usr/libexec/s2i
 
 # Install NPM
 RUN yum install -y --setopt=tsflags=nodocs yum-config-manager centos-release-scl && \
